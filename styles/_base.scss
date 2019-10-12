@@ -1,0 +1,28 @@
+@font-face {
+	font-family: "ZillaSlab-Medium";
+	src: local("ZillaSlab-Medium"),
+		url("/static/ZillaSlab-Medium.ttf") format("opentype");
+}
+
+body,
+html {
+	margin: 0;
+	padding: 0;
+	font-family: "azo-sans-web", sans-serif;
+	color: $main;
+	font-weight: 400;
+	font-size: 16px;
+}
+
+a {
+	text-decoration: none !important;
+}
+
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	outline: none;
+}

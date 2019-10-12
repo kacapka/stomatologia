@@ -1,0 +1,77 @@
+.services {
+	padding: 100px 0 75px 0;
+	display: flex;
+	position: relative;
+	&-decoration {
+		position: absolute;
+		right: -40px;
+		top: 25px;
+		width: 151px;
+		height: 151px;
+	}
+	&-img {
+		width: 434px;
+		height: 475px;
+	}
+	&-content {
+		flex: 1 1 auto;
+		padding-left: 50px;
+		&__title {
+			@extend %slab;
+			font-size: 55px;
+			line-height: 66px;
+			margin-bottom: 50px;
+		}
+		&__list {
+			list-style: none;
+			&-item {
+				cursor: pointer;
+				display: flex;
+				align-items: center;
+				font-size: 27px;
+				line-height: 32px;
+				justify-content: space-between;
+				&:not(:last-of-type) {
+					margin-bottom: 30px;
+				}
+				&--desc {
+					font-weight: 300;
+					font-size: 25px;
+					line-height: 36px;
+					margin-bottom: 20px;
+					cursor: default;
+				}
+				&--button {
+					font-weight: 700;
+					font-size: 15px;
+					line-height: 18px;
+					color: #efb296;
+					text-transform: uppercase;
+					cursor: pointer;
+					margin-top: 40px;
+				}
+			}
+			&-icon {
+				width: 30px;
+				height: 30px;
+				background-color: $main;
+				border-radius: 50%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				svg {
+					position: relative;
+					top: 1px;
+					width: 12px;
+					height: 8px;
+				}
+				&--close {
+					transform: rotate(180deg);
+					svg {
+						top: 0;
+					}
+				}
+			}
+		}
+	}
+}
