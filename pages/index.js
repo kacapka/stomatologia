@@ -6,6 +6,9 @@ import Nav from "../components/nav";
 import Hero from "../components/Hero";
 import Hr from "../components/Hr";
 import Services from "../components/Services";
+import Prices from "../components/Prices";
+import Contact from "../components/Contact";
+import Footer from "../components/Footer";
 
 export default () => (
 	<div>
@@ -14,7 +17,10 @@ export default () => (
 		<Hr />
 		<Services />
 		<Hr />
-		{/* <Nav /> */}
-		<div className="hero">aaaa</div>
+		<Prices />
+		<Hr />
+		<Contact />
+		<Hr />
+		<Footer />
 	</div>
 );

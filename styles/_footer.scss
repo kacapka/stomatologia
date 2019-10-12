@@ -1,0 +1,31 @@
+.footer {
+	background-color: #f8f4eb;
+	padding: 40px 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	&-title {
+		@extend %slab;
+		font-size: 20px;
+		line-height: 24px;
+		font-weight: 300;
+		margin-bottom: 30px;
+	}
+	&-text {
+		font-size: 15px;
+		line-height: 22px;
+		text-align: center;
+		a {
+			color: $main;
+			font-weight: 500;
+		}
+	}
+	&-author {
+		@extend %slab;
+		font-size: 9px;
+		line-height: 10px;
+		font-weight: 300;
+		margin-top: 30px;
+		color: $main;
+	}
+}
