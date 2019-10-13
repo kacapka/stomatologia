@@ -11,8 +11,8 @@ import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 
 export default () => (
-	<div>
-		<Head title="Gabinet Stomatologiczny dr Anita Seroka" />
+	<React.Fragment>
+		<Head title="Stomatologia dr A. Seroka" />
 		<Hero />
 		<Hr />
 		<Services />
@@ -22,5 +22,5 @@ export default () => (
 		<Contact />
 		<Hr />
 		<Footer />
-	</div>
+	</React.Fragment>
 );
