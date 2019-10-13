@@ -1,3 +1,4 @@
+import Pulse from "react-reveal/Pulse";
 import Container from "./Container";
 import Underline from "./Underline";
 import ServicesList from "./ServicesList";
@@ -15,9 +16,11 @@ const Services = () => {
 					className="services-img"
 				/>
 				<div className="services-content">
-					<h2 className="services-content__title">
-						<Underline isBig>Nasze Usługi</Underline>
-					</h2>
+					<Pulse>
+						<h2 className="services-content__title">
+							<Underline isBig>Nasze Usługi</Underline>
+						</h2>
+					</Pulse>
 					<ServicesList />
 				</div>
 			</section>

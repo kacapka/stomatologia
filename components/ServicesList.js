@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Fade } from "react-reveal";
 import SERVICES from "../data/services";
 
 import arrow from "../static/arrow.svg";
@@ -11,16 +12,19 @@ const ServicesList = () => {
 			<ul className="services-content__list">
 				{SERVICES.map(service => {
 					return (
-						<li
-							key={service.id}
-							className="services-content__list-item"
-							onClick={() => setActiveId(service.id)}
-						>
-							<p>{service.name}</p>
-							<div className="services-content__list-icon">
-								{arrow()}
-							</div>
-						</li>
+						<React.Fragment key={service.id}>
+							<Fade right>
+								<li
+									className="services-content__list-item"
+									onClick={() => setActiveId(service.id)}
+								>
+									<p>{service.name}</p>
+									<div className="services-content__list-icon">
+										{arrow()}
+									</div>
+								</li>
+							</Fade>
+						</React.Fragment>
 					);
 				})}
 			</ul>
