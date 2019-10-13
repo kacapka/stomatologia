@@ -6,6 +6,12 @@ import arrow from "../static/arrow.svg";
 
 const ServicesList = () => {
 	const [activeId, setActiveId] = useState(null);
+	const [isInit, setIsInit] = useState(true);
+
+	const onIntemClick = id => {
+		setActiveId(id);
+		setIsInit(null);
+	};
 
 	if (!activeId) {
 		return (
@@ -13,7 +19,19 @@ const ServicesList = () => {
 				{SERVICES.map(service => {
 					return (
 						<React.Fragment key={service.id}>
-							<Fade right>
+							{isInit ? (
+								<Fade right delay={service.id * 100}>
+									<li
+										className="services-content__list-item"
+										onClick={() => onIntemClick(service.id)}
+									>
+										<p>{service.name}</p>
+										<div className="services-content__list-icon">
+											{arrow()}
+										</div>
+									</li>
+								</Fade>
+							) : (
 								<li
 									className="services-content__list-item"
 									onClick={() => setActiveId(service.id)}
@@ -23,7 +41,7 @@ const ServicesList = () => {
 										{arrow()}
 									</div>
 								</li>
-							</Fade>
+							)}
 						</React.Fragment>
 					);
 				})}

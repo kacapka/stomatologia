@@ -1,11 +1,21 @@
-import Pulse from "react-reveal/Pulse";
+import Reveal from "react-reveal/Reveal";
+import { useState, useContext } from "react";
+import Typist from "react-typist";
 import Container from "./Container";
 import Underline from "./Underline";
 import ServicesList from "./ServicesList";
 
 import decoration from "../static/decoration.svg";
 
+import useScroll from "./UseScroll";
+
 const Services = () => {
+	const isInView = useScroll({ query: ".services" });
+	const [isList, setIsList] = useState(false);
+	const onTypingDone = () => {
+		setIsList(true);
+	};
+
 	return (
 		<Container>
 			<section className="services">
@@ -16,12 +26,19 @@ const Services = () => {
 					className="services-img"
 				/>
 				<div className="services-content">
-					<Pulse>
-						<h2 className="services-content__title">
-							<Underline isBig>Nasze Usługi</Underline>
-						</h2>
-					</Pulse>
-					<ServicesList />
+					{isInView && (
+						<React.Fragment>
+							<Typist
+								cursor={{ show: false }}
+								onTypingDone={onTypingDone}
+							>
+								<h2 className="services-content__title">
+									<Underline isBig>Nasze Usługi</Underline>
+								</h2>
+							</Typist>
+							{isList && <ServicesList />}
+						</React.Fragment>
+					)}
 				</div>
 			</section>
 		</Container>
