@@ -30,3 +30,26 @@
 		}
 	}
 }
+
+@media all and (min-width: 1600px) {
+	.container {
+		width: 1360px;
+	}
+
+	.horizontal-line {
+		height: 15px;
+	}
+
+	.underline {
+		&:after {
+			bottom: 2px;
+			height: 8px;
+		}
+		&--big {
+			&:after {
+				height: 8px;
+				bottom: 1px;
+			}
+		}
+	}
+}

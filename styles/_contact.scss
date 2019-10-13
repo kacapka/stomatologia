@@ -65,3 +65,53 @@
 		height: 50px;
 	}
 }
+
+@media all and (min-width: 1600px) {
+	.contact {
+		width: 1260px;
+		padding: 305px 0 230px 0;
+		&-item {
+			width: 580px;
+			height: 326px;
+			padding-top: 85px;
+			-webkit-box-shadow: 2px 20px 20px 8px rgba(0, 0, 0, 0.03);
+			-moz-box-shadow: 2px 20px 20px 8px rgba(0, 0, 0, 0.03);
+			box-shadow: 2px 20px 20px 8px rgba(0, 0, 0, 0.03);
+			&__img {
+				bottom: calc(100% - 25px);
+				width: 159px;
+				height: 150px;
+				&.scheduler {
+					width: 168px;
+				}
+			}
+			&__title {
+				font-size: 38px;
+				line-height: 46px;
+				margin-bottom: 30px;
+			}
+			&__text {
+				font-size: 25px;
+				line-height: 43px;
+			}
+		}
+		&-decoration1 {
+			left: 20px;
+			top: 100px;
+			width: 80px;
+			height: 80px;
+		}
+		&-decoration2 {
+			right: -42px;
+			top: 75px;
+			width: 153px;
+			height: 125px;
+		}
+		&-decoration3 {
+			left: 560px;
+			bottom: 80px;
+			width: 140px;
+			height: 60px;
+		}
+	}
+}

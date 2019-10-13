@@ -29,3 +29,22 @@
 		color: $main;
 	}
 }
+
+@media all and (min-width: 1600px) {
+	.footer {
+		padding: 55px 0 35px 0;
+		&-title {
+			font-size: 30px;
+			line-height: 36px;
+		}
+		&-text {
+			font-size: 20px;
+			line-height: 30px;
+		}
+		&-author {
+			font-size: 10px;
+			line-height: 12px;
+			margin-top: 45px;
+		}
+	}
+}

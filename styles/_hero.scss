@@ -21,3 +21,22 @@
 		z-index: -1;
 	}
 }
+
+@media all and (min-width: 1600px) {
+	.hero {
+		padding: 80px 0 0 0;
+		&-logo {
+			width: 172px;
+			height: 120px;
+		}
+		&-text {
+			font-size: 70px;
+			line-height: 84px;
+			margin: 65px 0 20px 0;
+		}
+		&-bg {
+			width: 1400px;
+			bottom: -7px;
+		}
+	}
+}
