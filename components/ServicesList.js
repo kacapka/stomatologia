@@ -20,7 +20,7 @@ const ServicesList = () => {
 					return (
 						<React.Fragment key={service.id}>
 							{isInit ? (
-								<Fade right delay={service.id * 100}>
+								<Fade bottom delay={service.id * 100}>
 									<li
 										className="services-content__list-item"
 										onClick={() => onIntemClick(service.id)}

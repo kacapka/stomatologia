@@ -1,7 +1,7 @@
 .prices {
 	display: flex;
-	padding: 115px 0 0 0;
-	margin-bottom: 75px;
+	padding: 100px 0 0 0;
+	margin-bottom: 100px;
 	position: relative;
 	justify-content: space-between;
 	&-img {
@@ -13,6 +13,11 @@
 		width: 106px;
 		bottom: 0;
 		left: 43%;
+		transform: translate(-40px, -40px) rotate(-30deg);
+		transition: 2s ease;
+		&--end {
+			transform: translate(0, 0) rotate(0);
+		}
 	}
 	&-content {
 		padding-top: 85px;
@@ -66,8 +71,8 @@
 
 @media all and (min-width: 1600px) {
 	.prices {
-		padding: 180px 0 0 0;
-		margin-bottom: 130px;
+		padding: 125px 0 0 0;
+		margin-bottom: 125px;
 		&-img {
 			width: 645px;
 			height: 675px;

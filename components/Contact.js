@@ -1,11 +1,17 @@
 import { useState, useEffect } from "react";
 import Slide from "react-reveal/Slide";
+import useScroll from "./UseScroll";
 
 const Contact = () => {
 	const [isReveal, setIsReveal] = useState(false);
 	const onReveal = () => {
 		const timeout = setTimeout(() => setIsReveal(true), 1000);
 	};
+
+	const animateDecoration = useScroll({
+		query: ".contact",
+		offset: 0
+	});
 
 	return (
 		<section className="contact">
@@ -51,15 +57,21 @@ const Contact = () => {
 			</Slide>
 			<img
 				src="https://stomatologia.s3.eu-central-1.amazonaws.com/contact_decoration1.png"
-				className="contact-decoration1"
+				className={`contact-decoration contact-decoration1 ${
+					animateDecoration ? "contact-decoration1--end" : ""
+				}`}
 			/>
 			<img
 				src="https://stomatologia.s3.eu-central-1.amazonaws.com/contact_decoration2.png"
-				className="contact-decoration2"
+				className={`contact-decoration contact-decoration2 ${
+					animateDecoration ? "contact-decoration2--end" : ""
+				}`}
 			/>
 			<img
 				src="https://stomatologia.s3.eu-central-1.amazonaws.com/contact_decoration3.png"
-				className="contact-decoration3"
+				className={`contact-decoration contact-decoration3 ${
+					animateDecoration ? "contact-decoration3--end" : ""
+				}`}
 			/>
 		</section>
 	);

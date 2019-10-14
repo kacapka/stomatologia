@@ -1,5 +1,5 @@
 .services {
-	padding: 100px 0 75px 0;
+	padding: 200px 0 100px 0;
 	display: flex;
 	position: relative;
 	&-decoration {
@@ -8,6 +8,11 @@
 		top: 25px;
 		width: 151px;
 		height: 151px;
+		transform: translateY(-40px) rotate(-30deg);
+		&--end {
+			transform: translateY(0) rotate(0);
+			transition: 2s ease;
+		}
 	}
 	&-img {
 		width: 434px;
@@ -79,7 +84,7 @@
 
 @media all and (min-width: 1600px) {
 	.services {
-		padding: 160px 0 130px 0;
+		padding: 250px 0 125px 0;
 		&-decoration {
 			top: 45px;
 			width: 200px;

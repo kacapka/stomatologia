@@ -11,6 +11,10 @@ import useScroll from "./UseScroll";
 
 const Services = () => {
 	const isInView = useScroll({ query: ".services" });
+	const animateDecoration = useScroll({
+		query: ".services",
+		offset: 0
+	});
 	const [isList, setIsList] = useState(false);
 	const onTypingDone = () => {
 		setIsList(true);
@@ -19,7 +23,13 @@ const Services = () => {
 	return (
 		<Container>
 			<section className="services">
-				<div className="services-decoration">{decoration()}</div>
+				<div
+					className={`services-decoration ${
+						animateDecoration ? "services-decoration--end" : ""
+					}`}
+				>
+					{decoration()}
+				</div>
 				<img
 					src="https://stomatologia.s3.eu-central-1.amazonaws.com/services_img.png"
 					alt="nasze usługi"

@@ -1,24 +1,33 @@
 import Fade from "react-reveal/Fade";
 import Typist from "react-typist";
 import { useState } from "react";
+import useScroll from "./UseScroll";
 
 import Container from "./Container";
 import Underline from "./Underline";
 
-import useScroll from "./UseScroll";
-
 const Prices = () => {
-	const isInView = useScroll({ query: ".services", offset: 1000 });
+	const [isTyping, setIsTyping] = useState(false);
 	const [isButton, setIsButton] = useState(false);
+	const animateDecoration = useScroll({
+		query: ".prices",
+		offset: 500
+	});
 	const onTypingDone = () => {
 		setIsButton(true);
 	};
+
+	const onReveal = () => {
+		setTimeout(() => setIsTyping(true), 800);
+	};
+
+	console.log(animateDecoration);
 
 	return (
 		<Container>
 			<section className="prices">
 				<div className="prices-content">
-					<Fade bottom>
+					<Fade bottom onReveal={onReveal}>
 						<h2 className="prices-content__title--light">
 							<span className="prices-content__title--light">
 								Indywidualne <br />
@@ -26,7 +35,7 @@ const Prices = () => {
 							</span>
 						</h2>
 					</Fade>
-					{isInView && (
+					{isTyping && (
 						<Typist
 							cursor={{ show: false }}
 							onTypingDone={onTypingDone}
@@ -52,7 +61,9 @@ const Prices = () => {
 				<img
 					src="https://stomatologia.s3.eu-central-1.amazonaws.com/prices_decoration.png"
 					alt=""
-					className="prices-decoration"
+					className={`prices-decoration ${
+						animateDecoration ? "prices-decoration--end" : ""
+					}`}
 				/>
 			</section>
 		</Container>
