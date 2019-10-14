@@ -62,10 +62,21 @@ const ServicesList = () => {
 					{arrow()}
 				</div>
 			</li>
-			{activeItem.desc.map(text => (
-				<li key={text} className="services-content__list-item--desc">
-					{text}
-				</li>
+			{activeItem.desc.map(item => (
+				<React.Fragment key={item.text}>
+					<li className="services-content__list-item--desc">
+						{item.text}
+					</li>
+					{item.list &&
+						item.list.map(t => (
+							<li
+								key={t}
+								className="services-content__list-item--desc services-content__list-item--bull"
+							>
+								&#8226; {t}
+							</li>
+						))}
+				</React.Fragment>
 			))}
 			<li
 				className="services-content__list-item--button"

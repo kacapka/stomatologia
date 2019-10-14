@@ -10,7 +10,7 @@ const Hero = () => {
 				alt="Anita Seroka logo"
 			/>
 			<div className="hero-title">
-				<Typist cursor={{ show: false }}>
+				<Typist cursor={{ show: false }} avgTypingDelay={120}>
 					<h1 className="hero-title__text">
 						Zadbamy o Twój piękny i{" "}
 						<Underline>zdrowy uśmiech!</Underline>

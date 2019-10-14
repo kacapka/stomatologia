@@ -8,9 +8,14 @@ const Contact = () => {
 		const timeout = setTimeout(() => setIsReveal(true), 1000);
 	};
 
-	const animateDecoration = useScroll({
+	const animateDecoration1 = useScroll({
 		query: ".contact",
-		offset: 0
+		offset: 200
+	});
+
+	const animateDecoration3 = useScroll({
+		query: ".contact",
+		offset: 500
 	});
 
 	return (
@@ -58,19 +63,19 @@ const Contact = () => {
 			<img
 				src="https://stomatologia.s3.eu-central-1.amazonaws.com/contact_decoration1.png"
 				className={`contact-decoration contact-decoration1 ${
-					animateDecoration ? "contact-decoration1--end" : ""
+					animateDecoration1 ? "contact-decoration1--end" : ""
 				}`}
 			/>
 			<img
 				src="https://stomatologia.s3.eu-central-1.amazonaws.com/contact_decoration2.png"
 				className={`contact-decoration contact-decoration2 ${
-					animateDecoration ? "contact-decoration2--end" : ""
+					animateDecoration1 ? "contact-decoration2--end" : ""
 				}`}
 			/>
 			<img
 				src="https://stomatologia.s3.eu-central-1.amazonaws.com/contact_decoration3.png"
 				className={`contact-decoration contact-decoration3 ${
-					animateDecoration ? "contact-decoration3--end" : ""
+					animateDecoration3 ? "contact-decoration3--end" : ""
 				}`}
 			/>
 		</section>

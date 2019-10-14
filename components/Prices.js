@@ -21,8 +21,6 @@ const Prices = () => {
 		setTimeout(() => setIsTyping(true), 800);
 	};
 
-	console.log(animateDecoration);
-
 	return (
 		<Container>
 			<section className="prices">
