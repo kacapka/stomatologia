@@ -61,3 +61,61 @@
 		}
 	}
 }
+
+@media all and (max-width: 1200px) {
+	.container {
+		width: 800px;
+	}
+
+	.underline {
+		&:after {
+			bottom: 1px;
+			height: 3px;
+		}
+		&--big {
+			&:after {
+				height: 5px;
+				bottom: 1px;
+			}
+		}
+	}
+}
+
+@media all and (max-width: 900px) {
+	.container {
+		width: 520px;
+	}
+
+	.underline {
+		&:after {
+			bottom: 2px;
+			height: 5px;
+		}
+		&--big {
+			&:after {
+				height: 6px;
+				bottom: 2px;
+			}
+		}
+	}
+}
+
+@media all and (max-width: 600px) {
+	.container {
+		width: 100%;
+		padding: 0 20px;
+	}
+
+	.underline {
+		&:after {
+			bottom: 1px;
+			height: 3px;
+		}
+		&--big {
+			&:after {
+				height: 3px;
+				bottom: 1px;
+			}
+		}
+	}
+}

@@ -1,19 +1,19 @@
 .footer {
 	background-color: #f8f4eb;
-	padding: 40px 0;
+	padding: 55px 0 35px 0;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	&-title {
 		@extend %slab;
-		font-size: 20px;
-		line-height: 24px;
+		font-size: 30px;
+		line-height: 36px;
 		font-weight: 300;
 		margin-bottom: 30px;
 	}
 	&-text {
-		font-size: 15px;
-		line-height: 22px;
+		font-size: 20px;
+		line-height: 30px;
 		text-align: center;
 		a {
 			color: $main;
@@ -22,29 +22,71 @@
 	}
 	&-author {
 		@extend %slab;
-		font-size: 9px;
-		line-height: 10px;
+		font-size: 10px;
+		line-height: 12px;
+		margin-top: 45px;
 		font-weight: 300;
-		margin-top: 30px;
 		color: $main;
 	}
 }
 
-@media all and (min-width: 1600px) {
+@media all and (max-width: 1600px) {
 	.footer {
-		padding: 55px 0 35px 0;
+		padding: 40px 0;
 		&-title {
-			font-size: 30px;
-			line-height: 36px;
+			font-size: 20px;
+			line-height: 24px;
 		}
 		&-text {
-			font-size: 20px;
-			line-height: 30px;
+			font-size: 15px;
+			line-height: 22px;
 		}
 		&-author {
-			font-size: 10px;
-			line-height: 12px;
+			font-size: 9px;
+			line-height: 10px;
+			margin-top: 30px;
+		}
+	}
+}
+
+@media all and (max-width: 900px) {
+	.footer {
+		padding: 80px 0 60px 0;
+		&-title {
+			font-size: 35px;
+			line-height: 42px;
+			margin-bottom: 40px;
+		}
+		&-text {
+			font-size: 22px;
+			line-height: 34px;
+			max-width: 390px;
+		}
+		&-author {
+			font-size: 14px;
+			line-height: 17px;
 			margin-top: 45px;
+		}
+	}
+}
+
+@media all and (max-width: 600px) {
+	.footer {
+		padding: 40px 0 40px 0;
+		&-title {
+			font-size: 19px;
+			line-height: 23px;
+			margin-bottom: 20px;
+		}
+		&-text {
+			font-size: 12px;
+			line-height: 21px;
+			max-width: 210px;
+		}
+		&-author {
+			font-size: 7px;
+			line-height: 9px;
+			margin-top: 25px;
 		}
 	}
 }
