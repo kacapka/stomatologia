@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import Slide from "react-reveal/Slide";
 import useScroll from "./UseScroll";
+import { Parallax } from "react-scroll-parallax";
 
 const Contact = () => {
 	const [isReveal, setIsReveal] = useState(false);
@@ -8,15 +9,15 @@ const Contact = () => {
 		const timeout = setTimeout(() => setIsReveal(true), 1000);
 	};
 
-	const animateDecoration1 = useScroll({
-		query: ".contact",
-		offset: 200
-	});
+	// const animateDecoration1 = useScroll({
+	// 	query: ".contact",
+	// 	offset: 200
+	// });
 
-	const animateDecoration3 = useScroll({
-		query: ".contact",
-		offset: 500
-	});
+	// const animateDecoration3 = useScroll({
+	// 	query: ".contact",
+	// 	offset: 500
+	// });
 
 	return (
 		<section className="contact">
@@ -60,13 +61,45 @@ const Contact = () => {
 					</p>
 				</div>
 			</Slide>
-			<img
+			<Parallax
+				y={[0, 0]}
+				x={[-40, 40]}
+				tagOuter="figure"
+				className="contact-decoration1--mobile"
+			>
+				<img src="https://stomatologia.s3.eu-central-1.amazonaws.com/contact_decoration1.png" />
+			</Parallax>
+			<Parallax
+				y={[20, -50]}
+				x={[-10, 0]}
+				tagOuter="figure"
+				className="contact-decoration1"
+			>
+				<img src="https://stomatologia.s3.eu-central-1.amazonaws.com/contact_decoration1.png" />
+			</Parallax>
+			<Parallax
+				y={[20, -100]}
+				x={[-10, 0]}
+				tagOuter="figure"
+				className="contact-decoration2"
+			>
+				<img src="https://stomatologia.s3.eu-central-1.amazonaws.com/contact_decoration2.png" />
+			</Parallax>
+			<Parallax
+				y={[30, -30]}
+				x={[30, -20]}
+				tagOuter="figure"
+				className="contact-decoration3"
+			>
+				<img src="https://stomatologia.s3.eu-central-1.amazonaws.com/contact_decoration3.png" />
+			</Parallax>
+			{/* <img
 				src="https://stomatologia.s3.eu-central-1.amazonaws.com/contact_decoration1.png"
 				className={`contact-decoration contact-decoration1 ${
 					animateDecoration1 ? "contact-decoration1--end" : ""
 				}`}
-			/>
-			<img
+			/> */}
+			{/* <img
 				src="https://stomatologia.s3.eu-central-1.amazonaws.com/contact_decoration2.png"
 				className={`contact-decoration contact-decoration2 ${
 					animateDecoration1 ? "contact-decoration2--end" : ""
@@ -77,7 +110,7 @@ const Contact = () => {
 				className={`contact-decoration contact-decoration3 ${
 					animateDecoration3 ? "contact-decoration3--end" : ""
 				}`}
-			/>
+			/> */}
 		</section>
 	);
 };
