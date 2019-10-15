@@ -12,6 +12,8 @@ import Prices from "../components/Prices";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 
+import { ParallaxProvider } from "react-scroll-parallax";
+
 export default () => {
 	useEffect(() => {
 		window.onbeforeunload = function() {
@@ -20,7 +22,7 @@ export default () => {
 	}, []);
 
 	return (
-		<React.Fragment>
+		<ParallaxProvider>
 			<Head title="Stomatologia dr A. Seroka" />
 			<Hero />
 			{/* <Hr /> */}
@@ -31,6 +33,6 @@ export default () => {
 			<Contact />
 			<Hr />
 			<Footer />
-		</React.Fragment>
+		</ParallaxProvider>
 	);
 };

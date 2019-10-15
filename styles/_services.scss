@@ -8,10 +8,16 @@
 		top: 25px;
 		width: 151px;
 		height: 151px;
-		transform: translateY(-40px) rotate(-30deg);
-		&--end {
-			transform: translateY(0) rotate(0);
-			transition: 2s ease;
+		// transform: translateY(-40px) rotate(-30deg);
+		// &--end {
+		// 	// transform: translateY(0) rotate(0);
+		// 	transition: 2s ease;
+		// }
+		&--mobile1 {
+			display: none;
+		}
+		&--mobile2 {
+			display: none;
 		}
 	}
 	&-img {
@@ -151,10 +157,12 @@
 	.services {
 		padding: 120px 0 60px 0;
 		&-decoration {
-			// top: 45px;
-			// width: 200px;
-			// height: 200px;
-			display: none;
+			top: 90%;
+			right: 50%;
+			width: 110px;
+			height: auto;
+			transform: rotate(90deg);
+			// display: none;
 		}
 		&-img {
 			width: 380px;
@@ -220,6 +228,20 @@
 			// width: 200px;
 			// height: 200px;
 			display: none;
+			&--mobile1 {
+				display: block;
+				position: absolute;
+				top: 70px;
+				left: 0;
+				width: 60px;
+			}
+			&--mobile2 {
+				display: block;
+				position: absolute;
+				top: 40px;
+				right: -20px;
+				width: 100px;
+			}
 		}
 		&-img {
 			width: 415px;
@@ -288,7 +310,21 @@
 			// top: 45px;
 			// width: 200px;
 			// height: 200px;
-			display: none;
+			// display: none;
+			&--mobile1 {
+				// display: block;
+				// position: absolute;
+				top: 100px;
+				left: 0;
+				width: 35px;
+			}
+			&--mobile2 {
+				// display: block;
+				// position: absolute;
+				top: 80px;
+				right: -20px;
+				width: 65px;
+			}
 		}
 		&-img {
 			width: 70%;

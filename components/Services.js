@@ -6,6 +6,10 @@ import Underline from "./Underline";
 import ServicesList from "./ServicesList";
 
 import decoration from "../static/decoration.svg";
+import decorationMobile1 from "../static/services_mobile_1.svg";
+import decorationMobile2 from "../static/services_mobile_2.svg";
+
+import { Parallax } from "react-scroll-parallax";
 
 import useScroll from "./UseScroll";
 
@@ -23,13 +27,30 @@ const Services = () => {
 	return (
 		<Container>
 			<section className="services">
-				<div
-					className={`services-decoration ${
-						animateDecoration ? "services-decoration--end" : ""
-					}`}
+				<Parallax
+					y={[-30, 40]}
+					x={[-20, 0]}
+					tagOuter="figure"
+					className="services-decoration"
 				>
 					{decoration()}
-				</div>
+				</Parallax>
+				<Parallax
+					y={[40, -100]}
+					x={[-20, 0]}
+					tagOuter="figure"
+					className="services-decoration--mobile1"
+				>
+					{decorationMobile1()}
+				</Parallax>
+				<Parallax
+					y={[30, -100]}
+					x={[0, 0]}
+					tagOuter="figure"
+					className="services-decoration--mobile2"
+				>
+					{decorationMobile2()}
+				</Parallax>
 				<img
 					src="https://stomatologia.s3.eu-central-1.amazonaws.com/services_img.png"
 					alt="nasze usługi"

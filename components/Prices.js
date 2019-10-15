@@ -6,6 +6,8 @@ import useScroll from "./UseScroll";
 import Container from "./Container";
 import Underline from "./Underline";
 
+import { Parallax } from "react-scroll-parallax";
+
 const Prices = () => {
 	const [isTyping, setIsTyping] = useState(false);
 	const [isButton, setIsButton] = useState(false);
@@ -56,13 +58,27 @@ const Prices = () => {
 					alt="indiwidualne podejście do klienta"
 					className="prices-img"
 				/>
-				<img
+				{/* <img
 					src="https://stomatologia.s3.eu-central-1.amazonaws.com/prices_decoration.png"
 					alt=""
 					className={`prices-decoration ${
 						animateDecoration ? "prices-decoration--end" : ""
 					}`}
-				/>
+				/> */}
+				<Parallax
+					y={[-30, 30]}
+					x={[-20, 20]}
+					tagOuter="figure"
+					className="prices-decoration"
+				>
+					<img
+						src="https://stomatologia.s3.eu-central-1.amazonaws.com/prices_decoration.png"
+						alt=""
+						// className={`prices-decoration ${
+						// 	animateDecoration ? "prices-decoration--end" : ""
+						// }`}
+					/>
+				</Parallax>
 			</section>
 		</Container>
 	);
