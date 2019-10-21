@@ -8,11 +8,6 @@
 		top: 25px;
 		width: 151px;
 		height: 151px;
-		// transform: translateY(-40px) rotate(-30deg);
-		// &--end {
-		// 	// transform: translateY(0) rotate(0);
-		// 	transition: 2s ease;
-		// }
 		&--mobile1 {
 			display: none;
 		}
@@ -162,7 +157,6 @@
 			width: 110px;
 			height: auto;
 			transform: rotate(90deg);
-			// display: none;
 		}
 		&-img {
 			width: 380px;
@@ -224,9 +218,6 @@
 		flex-direction: column-reverse;
 		align-items: center;
 		&-decoration {
-			// top: 45px;
-			// width: 200px;
-			// height: 200px;
 			display: none;
 			&--mobile1 {
 				display: block;
@@ -262,25 +253,6 @@
 			&__list {
 				margin-bottom: 70px;
 				&-item {
-					// font-size: 27px;
-					// line-height: 32px;
-					// &:not(:last-of-type) {
-					// 	margin-bottom: 20px;
-					// }
-					// p {
-					// 	padding-right: 15px;
-					// }
-					// &--desc {
-					// 	font-size: 25px;
-					// 	line-height: 30px;
-					// 	margin-bottom: 20px;
-					// }
-					// &--bull {
-					// 	font-size: 20px;
-					// 	line-height: 30px;
-					// 	margin-bottom: 10px;
-					// 	padding-left: 20px;
-					// }
 					&--button {
 						font-size: 22px;
 						line-height: 36px;
@@ -307,20 +279,12 @@
 	.services {
 		padding: 60px 0 30px 0;
 		&-decoration {
-			// top: 45px;
-			// width: 200px;
-			// height: 200px;
-			// display: none;
 			&--mobile1 {
-				// display: block;
-				// position: absolute;
 				top: 100px;
 				left: 0;
 				width: 35px;
 			}
 			&--mobile2 {
-				// display: block;
-				// position: absolute;
 				top: 80px;
 				right: -20px;
 				width: 65px;
@@ -330,7 +294,6 @@
 			width: 70%;
 			max-width: 300px;
 			height: auto;
-			// position: relative;
 			left: 10px;
 		}
 		&-content {
@@ -352,13 +315,10 @@
 					&--desc {
 						font-size: 15px;
 						line-height: 18px;
-						// margin-bottom: 20px;
 					}
 					&--bull {
 						font-size: 12px;
 						line-height: 18px;
-						// margin-bottom: 10px;
-						// padding-left: 20px;
 					}
 					&--button {
 						font-size: 15px;

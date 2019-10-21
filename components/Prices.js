@@ -2,13 +2,18 @@ import Fade from "react-reveal/Fade";
 import Typist from "react-typist";
 import { useState } from "react";
 import useScroll from "./UseScroll";
+import Modal from "react-modal";
 
 import Container from "./Container";
 import Underline from "./Underline";
 
 import { Parallax } from "react-scroll-parallax";
+import ModalPrices from "./Modal";
+
+Modal.setAppElement("#__next");
 
 const Prices = () => {
+	const [isModal, setIsModal] = useState(false);
 	const [isTyping, setIsTyping] = useState(false);
 	const [isButton, setIsButton] = useState(false);
 	const animateDecoration = useScroll({
@@ -22,6 +27,9 @@ const Prices = () => {
 	const onReveal = () => {
 		setTimeout(() => setIsTyping(true), 800);
 	};
+
+	const openModal = () => setIsModal(true);
+	const closeModal = () => setIsModal(false);
 
 	return (
 		<Container>
@@ -47,7 +55,10 @@ const Prices = () => {
 					)}
 					{isButton && (
 						<Fade left>
-							<div className="prices-content__button">
+							<div
+								className="prices-content__button"
+								onClick={openModal}
+							>
 								<p>SPRAWDŹ NASZE CENY</p>
 							</div>
 						</Fade>
@@ -58,13 +69,6 @@ const Prices = () => {
 					alt="indiwidualne podejście do klienta"
 					className="prices-img"
 				/>
-				{/* <img
-					src="https://stomatologia.s3.eu-central-1.amazonaws.com/prices_decoration.png"
-					alt=""
-					className={`prices-decoration ${
-						animateDecoration ? "prices-decoration--end" : ""
-					}`}
-				/> */}
 				<Parallax
 					y={[-30, 30]}
 					x={[-20, 20]}
@@ -74,12 +78,33 @@ const Prices = () => {
 					<img
 						src="https://stomatologia.s3.eu-central-1.amazonaws.com/prices_decoration.png"
 						alt=""
-						// className={`prices-decoration ${
-						// 	animateDecoration ? "prices-decoration--end" : ""
-						// }`}
 					/>
 				</Parallax>
 			</section>
+			<Modal
+				isOpen={isModal}
+				onRequestClose={closeModal}
+				className="modal"
+				overlayClassName="overlay"
+			>
+				<div className="modal-close" onClick={closeModal}>
+					<div className="modal-close__line left" />
+					<div className="modal-close__line right" />
+				</div>
+				<div className="modal-content">
+					<div className="modal-content__scroll">
+						<Typist
+							cursor={{ show: false }}
+							onTypingDone={onTypingDone}
+						>
+							<h2 className="modal-title">
+								<Underline>Cennik</Underline>
+							</h2>
+						</Typist>
+						<ModalPrices />
+					</div>
+				</div>
+			</Modal>
 		</Container>
 	);
 };
