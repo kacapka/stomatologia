@@ -5,7 +5,8 @@ const UseScroll = ({ query, offset = 100 }) => {
 	const [element, setElement] = useState(null);
 	const listener = e => {
 		if (!element) return;
-		const scroll = window.scrollY + window.innerHeight - offset;
+		const scrollY = window.scrollY || document.documentElement.scrollTop;
+		const scroll = scrollY + window.innerHeight - offset;
 		if (scroll > element.offsetTop) {
 			setIsIntoView(true);
 		}

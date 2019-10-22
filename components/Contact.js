@@ -38,7 +38,7 @@ const Contact = () => {
 					<p className="contact-item__text">
 						ul. Jagiellońska 5A, lok. 2, <br />
 						05-120 Legionowo <br />
-						Telefon: <a href="tel:+4822123456">22 123 456</a>
+						Telefon: <a href="tel:+48500195375">500 195 375</a>
 					</p>
 				</div>
 			</Slide>

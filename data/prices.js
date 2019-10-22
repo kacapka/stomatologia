@@ -11,7 +11,7 @@ const PRICES = [
 				price: "50"
 			},
 			{
-				name: "znieczulenie nasiękowe",
+				name: "znieczulenie",
 				price: "20"
 			},
 			{
@@ -100,11 +100,11 @@ const PRICES = [
 				price: "30 - 60"
 			},
 			{
-				name: "płukanie ropne",
+				name: "płukanie ropnia",
 				price: "50"
 			},
 			{
-				name: "nacięcie ropne",
+				name: "nacięcie ropnia",
 				price: "60"
 			},
 			{

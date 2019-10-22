@@ -20,7 +20,8 @@
 		height: 475px;
 	}
 	&-content {
-		flex: 1 1 auto;
+		// flex: 1 1 auto;
+		width: 566px;
 		padding-left: 50px;
 		&__title {
 			@extend %slab;
@@ -104,6 +105,7 @@
 			height: 690px;
 		}
 		&-content {
+			width: 730px;
 			margin-top: 40px;
 			&__title {
 				font-size: 70px;
@@ -163,6 +165,7 @@
 			height: 420px;
 		}
 		&-content {
+			width: auto;
 			margin-top: -25px;
 			padding-left: 25px;
 			&__title {

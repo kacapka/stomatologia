@@ -1,5 +1,4 @@
-import Reveal from "react-reveal/Reveal";
-import { useState, useContext } from "react";
+import { useState } from "react";
 import Typist from "react-typist";
 import Container from "./Container";
 import Underline from "./Underline";
@@ -14,15 +13,16 @@ import { Parallax } from "react-scroll-parallax";
 import useScroll from "./UseScroll";
 
 const Services = () => {
-	const isInView = useScroll({ query: ".services" });
-	const animateDecoration = useScroll({
+	const isInView = useScroll({
 		query: ".services",
-		offset: 0
+		offset: 100
 	});
 	const [isList, setIsList] = useState(false);
 	const onTypingDone = () => {
 		setIsList(true);
 	};
+
+	console.log(isInView);
 
 	return (
 		<Container>
