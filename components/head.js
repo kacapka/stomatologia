@@ -35,19 +35,20 @@ const Head = props => (
 			href="/static/favicon-16x16.png"
 		/>
 		<link rel="manifest" href="/static/site.webmanifest"></link>
+		<meta
+			property="og:image"
+			content="https://stomatologia.s3.eu-central-1.amazonaws.com/services_img.png"
+		/>
 
-		<meta property="og:url" content={props.url || defaultOGURL} />
-		<meta property="og:title" content={props.title || ""} />
 		<meta
 			property="og:description"
-			content={props.description || defaultDescription}
+			content="Zadbamy o Twój piękny i zdrowy uśmiech!"
 		/>
-		<meta name="twitter:site" content={props.url || defaultOGURL} />
-		<meta name="twitter:card" content="summary_large_image" />
-		<meta name="twitter:image" content={props.ogImage || defaultOGImage} />
-		<meta property="og:image" content={props.ogImage || defaultOGImage} />
-		<meta property="og:image:width" content="1200" />
-		<meta property="og:image:height" content="630" />
+
+		<meta property="og:url" content="https://www.drseroka.pl/" />
+
+		<meta property="og:title" content="Stomatologia dr Anita Seroka" />
+
 		<link
 			rel="stylesheet"
 			href="https://use.typekit.net/tys8kdf.css"

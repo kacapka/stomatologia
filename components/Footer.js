@@ -13,13 +13,19 @@ const Footer = () => {
 					Facebooku!
 				</a>
 			</p>
-			<a
-				className="footer-author"
-				href="https://www.instagram.com/dominika_suszek/"
-				target="_blank"
-			>
-				Designed by Dominika Suszek
-			</a>
+			<p className="footer-author">
+				Realizacja:{" "}
+				<a
+					href="https://www.instagram.com/dominika_suszek/"
+					target="_blank"
+				>
+					Dominika Suszek
+				</a>{" "}
+				i{" "}
+				<a href="http://joannagebal.com/" target="_blank">
+					Joanna Gębal
+				</a>
+			</p>
 		</footer>
 	);
 };
