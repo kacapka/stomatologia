@@ -4,6 +4,7 @@ import Underline from "./Underline";
 const Hero = () => {
 	return (
 		<section className="hero">
+			<h1 className="hero__title">Stomatologia dr. Anita Seroka</h1>
 			<img
 				src="https://stomatologia.s3.eu-central-1.amazonaws.com/logo.svg"
 				className="hero-logo"

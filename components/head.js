@@ -18,7 +18,7 @@ const Head = props => (
 		></meta>
 		<meta
 			name="description"
-			content="Zadbamy o Twój piękny i zdrowy uśmiech!. Świadczymy usługi z zakresu stomatologi zachowawczej, chirurgi, implantologii, protetyki i periondontologii. Zapraszamy do naszego gabinetu, Legionowo ul. Jagielońska 5a."
+			content="Stomatologia zachowawcza, chirurgia, implantologia, protetyka i periondontologia. Zapraszamy do naszego gabinetu, Legionowo ul. Jagielońska 5a."
 		/>
 		<meta name="keywords" content={props.keywords || defaultKeywords} />
 
