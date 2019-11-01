@@ -1,7 +1,7 @@
 const Footer = () => {
 	return (
 		<footer className="footer">
-			<h1 className="footer-title">Do zobaczenia!</h1>
+			<h3 className="footer-title">Do zobaczenia!</h3>
 			<p className="footer-text">
 				Pracujemy od poniedziałku do piątku w godzinach 08.00 - 20.00.{" "}
 				<br />
@@ -9,6 +9,7 @@ const Footer = () => {
 				<a
 					href="https://www.facebook.com/Gabinet-stomatologiczny-Anita-Seroka-122504902476265/"
 					target="_blank"
+					rel="noreferrer"
 				>
 					Facebooku!
 				</a>
@@ -17,12 +18,17 @@ const Footer = () => {
 				Realizacja:{" "}
 				<a
 					href="https://www.instagram.com/dominika_suszek/"
+					rel="noreferrer"
 					target="_blank"
 				>
 					Dominika Suszek
 				</a>{" "}
 				i{" "}
-				<a href="http://joannagebal.com/" target="_blank">
+				<a
+					href="http://joannagebal.com/"
+					target="_blank"
+					rel="noreferrer"
+				>
 					Joanna Gębal
 				</a>
 			</p>

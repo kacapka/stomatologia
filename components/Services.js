@@ -22,8 +22,6 @@ const Services = () => {
 		setIsList(true);
 	};
 
-	console.log(isInView);
-
 	return (
 		<Container>
 			<section className="services">

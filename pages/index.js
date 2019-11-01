@@ -23,7 +23,7 @@ export default () => {
 
 	return (
 		<ParallaxProvider>
-			<Head title="Stomatologia dr A. Seroka, Legionowo ul. Jagielońska 5a" />
+			<Head title="Stomatologia dr A. Seroka - zadbamy o Twoj uśmiech" />
 			<Hero />
 			<Services />
 			<Prices />
