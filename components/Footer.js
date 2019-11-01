@@ -1,7 +1,7 @@
 const Footer = () => {
 	return (
 		<footer className="footer">
-			<h3 className="footer-title">Do zobaczenia!</h3>
+			<h1 className="footer-title">Do zobaczenia!</h1>
 			<p className="footer-text">
 				Pracujemy od poniedziałku do piątku w godzinach 08.00 - 20.00.{" "}
 				<br />
