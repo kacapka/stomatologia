@@ -1,11 +1,6 @@
 import NextHead from "next/head";
 import { string } from "prop-types";
 
-const defaultDescription = "";
-const defaultKeywords = "";
-const defaultOGURL = "";
-const defaultOGImage = "";
-
 const Head = props => (
 	<NextHead>
 		<meta charSet="UTF-8" />
@@ -20,7 +15,6 @@ const Head = props => (
 			name="description"
 			content="Stomatologia zachowawcza, chirurgia, implantologia, protetyka i periondontologia. Zapraszamy do naszego gabinetu, Legionowo ul. Jagielońska 5a."
 		/>
-		<meta name="keywords" content={props.keywords || defaultKeywords} />
 
 		<link
 			rel="apple-touch-icon"

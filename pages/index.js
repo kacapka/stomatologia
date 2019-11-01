@@ -23,7 +23,7 @@ export default () => {
 
 	return (
 		<ParallaxProvider>
-			<Head title="Stomatologia dr A. Seroka - zadbamy o Twoj uśmiech" />
+			<Head title="Stomatologia dr A. Seroka - zadbamy o Twój uśmiech!" />
 			<Hero />
 			<Services />
 			<Prices />
