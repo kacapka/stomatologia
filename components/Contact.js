@@ -67,7 +67,10 @@ const Contact = () => {
 				tagOuter="figure"
 				className="contact-decoration1--mobile"
 			>
-				<img src="https://stomatologia.s3.eu-central-1.amazonaws.com/contact_decoration1.png" />
+				<img
+					src="https://stomatologia.s3.eu-central-1.amazonaws.com/contact_decoration1.png"
+					alt="dekoracja"
+				/>
 			</Parallax>
 			<Parallax
 				y={[20, -50]}
@@ -75,7 +78,10 @@ const Contact = () => {
 				tagOuter="figure"
 				className="contact-decoration1"
 			>
-				<img src="https://stomatologia.s3.eu-central-1.amazonaws.com/contact_decoration1.png" />
+				<img
+					src="https://stomatologia.s3.eu-central-1.amazonaws.com/contact_decoration1.png"
+					alt="dekoracja"
+				/>
 			</Parallax>
 			<Parallax
 				y={[20, -100]}
@@ -83,7 +89,10 @@ const Contact = () => {
 				tagOuter="figure"
 				className="contact-decoration2"
 			>
-				<img src="https://stomatologia.s3.eu-central-1.amazonaws.com/contact_decoration2.png" />
+				<img
+					src="https://stomatologia.s3.eu-central-1.amazonaws.com/contact_decoration2.png"
+					alt="dekoracja"
+				/>
 			</Parallax>
 			<Parallax
 				y={[30, -30]}
@@ -91,26 +100,11 @@ const Contact = () => {
 				tagOuter="figure"
 				className="contact-decoration3"
 			>
-				<img src="https://stomatologia.s3.eu-central-1.amazonaws.com/contact_decoration3.png" />
+				<img
+					src="https://stomatologia.s3.eu-central-1.amazonaws.com/contact_decoration3.png"
+					alt="dekoracja"
+				/>
 			</Parallax>
-			{/* <img
-				src="https://stomatologia.s3.eu-central-1.amazonaws.com/contact_decoration1.png"
-				className={`contact-decoration contact-decoration1 ${
-					animateDecoration1 ? "contact-decoration1--end" : ""
-				}`}
-			/> */}
-			{/* <img
-				src="https://stomatologia.s3.eu-central-1.amazonaws.com/contact_decoration2.png"
-				className={`contact-decoration contact-decoration2 ${
-					animateDecoration1 ? "contact-decoration2--end" : ""
-				}`}
-			/>
-			<img
-				src="https://stomatologia.s3.eu-central-1.amazonaws.com/contact_decoration3.png"
-				className={`contact-decoration contact-decoration3 ${
-					animateDecoration3 ? "contact-decoration3--end" : ""
-				}`}
-			/> */}
 		</section>
 	);
 };

@@ -77,7 +77,7 @@ const Prices = () => {
 				>
 					<img
 						src="https://stomatologia.s3.eu-central-1.amazonaws.com/prices_decoration.png"
-						alt=""
+						alt="dekoracja"
 					/>
 				</Parallax>
 			</section>

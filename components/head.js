@@ -11,9 +11,14 @@ const Head = props => (
 		<meta charSet="UTF-8" />
 		<title>{props.title || ""}</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="robots" content="index, follow"></meta>
+		<meta
+			name="keywords"
+			content="stomatologia, gabinet stomatologiczny, dentysta, stomatolog, dr Anita Seroka, Legionowo"
+		></meta>
 		<meta
 			name="description"
-			content={props.description || defaultDescription}
+			content="Zadbamy o Twój piękny i zdrowy uśmiech!. Świadczymy usługi z zakresu stomatologi zachowawczej, chirurgi, implantologii, protetyki i periondontologii. Zapraszamy do naszego gabinetu, Legionowo ul. Jagielońska 5a."
 		/>
 		<meta name="keywords" content={props.keywords || defaultKeywords} />
 
@@ -34,7 +39,11 @@ const Head = props => (
 			sizes="16x16"
 			href="/static/favicon-16x16.png"
 		/>
+		<link rel="canonical" href="https://www.drseroka.pl/" />
 		<link rel="manifest" href="/static/site.webmanifest"></link>
+		<meta property="og:image:width" content="1200" />
+		<meta property="og:image:height" content="630" />
+
 		<meta
 			property="og:image"
 			content="https://stomatologia.s3.eu-central-1.amazonaws.com/services_img.png"
