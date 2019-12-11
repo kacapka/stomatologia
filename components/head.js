@@ -9,7 +9,7 @@ const Head = props => (
 		<meta name="robots" content="index, follow"></meta>
 		<meta
 			name="keywords"
-			content="stomatologia, gabinet stomatologiczny, dentysta, stomatolog, dr Anita Seroka, Legionowo"
+			content="stomatologia dr seroka, gabinet stomatologiczny, dentysta, stomatolog, dr Anita Seroka, Legionowo"
 		></meta>
 		<meta
 			name="description"
