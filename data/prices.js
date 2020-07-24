@@ -12,11 +12,11 @@ const PRICES = [
 			},
 			{
 				name: "znieczulenie",
-				price: "20"
+				price: "30"
 			},
 			{
 				name: "zdjęcie RVG",
-				price: "20"
+				price: "30"
 			},
 			{
 				name: "lak 1 ząb",
@@ -28,7 +28,7 @@ const PRICES = [
 			},
 			{
 				name: "kiretaż",
-				price: "70"
+				price: "80"
 			},
 			{
 				name: "wybielanie 2 łuki",
@@ -36,47 +36,47 @@ const PRICES = [
 			},
 			{
 				name: "wybielanie zęba martwego 1 wizyta",
-				price: "50"
+				price: "60"
 			},
 			{
 				name: "wypełnienie zęba mlecznego",
-				price: "100 - 140"
+				price: "130 - 170"
 			},
 			{
 				name: "wypełnienie zęba stałego",
-				price: "120 - 190"
+				price: "150 - 220"
 			},
 			{
 				name: "kompozytowa odbudowa szkliwa",
-				price: "300"
+				price: "370"
 			},
 			{
 				name: "odbudowa na włóknie szklanym",
-				price: "470 - 490"
+				price: "510 - 530"
 			},
 			{
 				name: "opatrunek tymczasowy",
-				price: "50 - 70"
+				price: "80 - 100"
 			},
 			{
 				name: "kanałowe leczenie zęba",
-				price: "320 - 660"
+				price: "360 - 720"
 			},
 			{
 				name: "czyszczenie małe (piaskowanie)",
-				price: "120"
+				price: "150"
 			},
 			{
 				name: "czyszczenie duże (piaskowanie+scaling)",
-				price: "180"
+				price: "250"
 			},
 			{
 				name: "czyszczenie małe 1 łuk",
-				price: "70"
+				price: "80"
 			},
 			{
 				name: "czyszczenie duże 1 luk",
-				price: "90"
+				price: "110"
 			},
 			{
 				name: "fluoryzacja",
@@ -88,7 +88,7 @@ const PRICES = [
 			},
 			{
 				name: "czyszczenie duże + fluoryzacja",
-				price: "250"
+				price: "330"
 			}
 		]
 	},
@@ -101,23 +101,23 @@ const PRICES = [
 			},
 			{
 				name: "płukanie ropnia",
-				price: "50"
+				price: "80"
 			},
 			{
 				name: "nacięcie ropnia",
-				price: "60"
-			},
-			{
-				name: "ekstrakcja chirurgiczna zęba",
-				price: "120 - 190"
+				price: "90"
 			},
 			{
 				name: "ekstrakcja zęba mlecznego",
-				price: "70 - 120"
+				price: "80 - 150"
+			},
+			{
+				name: "ekstrakcja chirurgiczna zęba",
+				price: "150 - 220"
 			},
 			{
 				name: "dłutowanie zęba zatrzymanego",
-				price: "290 - 350"
+				price: "330 - 380"
 			},
 			{
 				name: "implant",
@@ -125,11 +125,11 @@ const PRICES = [
 			},
 			{
 				name: "kontrola implantologiczna",
-				price: "200"
+				price: "250"
 			},
 			{
 				name: "rewizja implantologiczna",
-				price: "250 - 350"
+				price: "300 - 400"
 			}
 		]
 	},
@@ -138,63 +138,63 @@ const PRICES = [
 		prices: [
 			{
 				name: "korona tymczasowa",
-				price: "50 - 80"
+				price: "70 - 100"
 			},
 			{
 				name: "zacementowanie jednej korony",
-				price: "60"
-			},
-			{
-				name: "zdjęcie korony protetycznej 1 punkt",
-				price: "70"
-			},
-			{
-				name: "naprawa płyty protezy 1 punkt",
-				price: "100"
-			},
-			{
-				name: "podścielenie płyty protezy w gabinecie",
-				price: "150"
-			},
-			{
-				name: "podścielenie płyty protezy w pracowni",
-				price: "200"
-			},
-			{
-				name: "modele diagnostyczne",
 				price: "80"
 			},
 			{
+				name: "zdjęcie korony protetycznej 1 punkt",
+				price: "100"
+			},
+			{
+				name: "naprawa płyty protezy 1 punkt",
+				price: "120"
+			},
+			{
+				name: "podścielenie płyty protezy w gabinecie",
+				price: "180"
+			},
+			{
+				name: "podścielenie płyty protezy w pracowni",
+				price: "230"
+			},
+			{
+				name: "modele diagnostyczne",
+				price: "90"
+			},
+			{
 				name: "wkład koronowo-korzeniowy",
-				price: "500"
+				price: "550"
 			},
 			{
 				name: "korona akryl laboratoryjny",
-				price: "300"
+				price: "350"
 			},
 			{
 				name: "korona stal porcelanowa",
-				price: "800"
+				price: "850"
 			},
 			{
 				name: "korona pełnoceramiczna",
-				price: "1600"
+				price: "1700"
 			},
 			{
 				name: "licówka pełnoceramiczna",
-				price: "1500"
+				price: "1600"
 			},
 			{
 				name: "proteza acetylowa",
-				price: "1900"
+				price: "2000"
 			},
 			{
 				name: "szyna relaksacyjna miękka",
-				price: "300"
+				price: "400"
 			},
 			{
 				name: "szyna relaksacyjna twarda",
-				price: "400"
+				price: "450"
 			}
 		]
 	}
